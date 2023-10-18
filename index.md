@@ -4,8 +4,8 @@ subtitle: 这个是用来测试的页面
 layout: page
 # callouts: home_callouts
 show_sidebar: false
-image: /bulma-clan-theme/img/recipe-example.jpg
-hero_image: /bulma-clean-theme/img/recipe-example.jpg
+image: /img/default-bg.jpg
+hero_image: /img/default-bg.jpg
 hero_darken: true
 ---
 
@@ -15,9 +15,7 @@ hero_darken: true
 
 使用 markdown 来编写页面，避免复杂的样式表耽误时间
 
-[![Gem Version](https://badge.fury.io/rb/bulma-clean-theme.svg)](https://badge.fury.io/rb/bulma-clean-theme)
-![Gem](https://img.shields.io/gem/dt/bulma-clean-theme.svg)
-![GitHub Repo stars](https://img.shields.io/github/stars/chrisrhymes/bulma-clean-theme?style=social)
+
 
 ## 二级标题
 
