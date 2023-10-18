@@ -1,0 +1,25 @@
+- name: 数据集
+  link: /products/
+- name: 论文
+  link: /docs/
+- name: 关于
+  link: /blog/
+# 测试
+
+- name: $Example Pages
+  link: /#
+  dropdown:
+    - name: Landing Page With Callouts
+      link: /landing/
+    - name: Sponsors Page
+      link: /sponsors/
+    - name: Image Gallery
+      link: /gallery/
+    - name: Products
+      link: /products/
+    - name: Recipe Page
+      link: /example-recipe/
+    - name: Showcase
+      link: /showcase/
+- name: $Blog
+  link: /blog/

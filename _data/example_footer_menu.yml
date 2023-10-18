@@ -1,0 +1,8 @@
+- name: 主页
+  link: /
+- name: 博客
+  link: /blog/
+- name: 产品
+  link: /products/
+- name: 隐私政策
+  link: /privacy-policy/
