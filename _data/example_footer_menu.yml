@@ -1,8 +1,8 @@
 - name: 主页
   link: /
-- name: 博客
+- name: 数据集
   link: /blog/
-- name: 产品
+- name: 论文
   link: /products/
-- name: 隐私政策
+- name: 关于
   link: /privacy-policy/

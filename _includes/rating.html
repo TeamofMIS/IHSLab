@@ -1,6 +1,6 @@
 
-    <div class="content {% if include.align %} {{ include.align }} {% else %} has-text-centered {% endif %}">
-        {% for num in (1..include.rating) %}
+    <div class="content {% if include.align %} {{ include.align }} {% else %} {% endif %}">
+        热度：{% for num in (1..include.rating) %}
         <span class="icon">
             <i class="fas fa-star"></i>
         </span>
