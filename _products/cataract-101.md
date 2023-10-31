@@ -1,16 +1,16 @@
 ---
-title: Cholec80
-subtitle: 由法国斯特拉斯堡大学CAMMA研究团队收集的胆囊切除术视频数据集
+title: Cataract-101
+subtitle: 由奥地利克拉根福大学ITEC研究团队收集的白内障手术视频数据集
 description: 这里是数据介绍
 product_code: No.12132
 layout: product
-image: /assets/images/cholec80.jpg
+image: /assets/images/cataract-101.png
 price: 可申请获取
-author: Twinanda et al.
+author: Schoeffmann et al.
 date: 2023-01-01
 rating: 4
 features:
-    -   label: 手术，视频，阶段，器械
+    -   label: 手术，视频，阶段
         icon: fa-file-archive
     -   label: 自定义协议，非商业可用
         icon: fa-copyright
@@ -21,11 +21,11 @@ features:
 
 ---
 
-Cholec80数据集包含13名外科医生操作的80例胆囊切除术视频。视频帧率为25 fps，分辨率为854x480或1920x1080，平均时长为38.44分钟。每个视频标有阶段标签（25 fps）和器械标签（1 fps）。这些阶段由一位资深外科医生定义。由于器械有时在图像中几乎不可见，难以在视觉上识别，因此如果至少有一半的器械尖端可见，则将器械定义为存在于图像中。
+Cataract-101包含由四位外科医生实施的101个白内障手术视频，视频以25 fps拍摄，分辨率为720×540，平均时长为8.34分钟。视频所有帧都由资深眼科医生标注了10个手术阶段。
 
 ### 访问地址
 
-[Cholec80](http://camma.u-strasbg.fr/datasets)
+[Cataract-101](http://ftp.itec.aau.at/datasets/ovid/cat-101/)
 
 ### 配置方式
 
@@ -39,7 +39,7 @@ from operator import itemgetter
 from torch.utils.data import Dataset, DataLoader, ConcatDataset
 from torchvision.io import read_image
 
-_FPS_CHOLEC80 = 25
+_FPS_CATARACTS = 25
 
 class VideoClip(Dataset):
     def __init__(self, img_root, ann_path, num_class, video_name, n_frame, duration, fps, group_tfs=None, drop_phase_transition=False):
@@ -148,15 +148,15 @@ def one_hot(a, num_classes):
     else:
         raise ValueError()
 
-def _get_multi_video_dataset_cholec80(img_root, ann_path, num_class, video_names, n_frame, duration, group_tfs, drop_phase_transition):
+def _get_multi_video_dataset_cataract101(img_root, ann_path, num_class, video_names, n_frame, duration, group_tfs, drop_phase_transition):
     datasets = []
     for video_name in video_names:
-        datasets.append(VideoClip(img_root, ann_path, num_class, video_name, n_frame, duration, _FPS_CHOLEC80, group_tfs, drop_phase_transition))
+        datasets.append(VideoClip(img_root, ann_path, num_class, video_name, n_frame, duration, _FPS_CATARACTS, group_tfs, drop_phase_transition))
     return ConcatDataset(datasets)
 
 def get_dataloader(name, batch_size, shuffle, pin_memory, num_workers, **kwargs):
-    if name == 'cholec80':
-        dataset = _get_multi_video_dataset_cholec80(
+    if name == 'cataract101':
+        dataset = _get_multi_video_dataset_cataract101(
             img_root=kwargs['data_dir'],
             ann_path=kwargs['label_dir'],
             num_class=kwargs['num_class'],
@@ -164,23 +164,15 @@ def get_dataloader(name, batch_size, shuffle, pin_memory, num_workers, **kwargs)
             n_frame=kwargs['n_frame'],
             duration=kwargs['duration'],
             group_tfs=kwargs['group_tfs'],
-            drop_phase_transition=True,
+            drop_phase_transition=True
         )
 
     return DataLoader(dataset, batch_size, shuffle=shuffle, pin_memory=pin_memory, num_workers=num_workers)
 ```
-
-### Benchmarks
-
-| 任务                         | 数据集变体         | 最优模型        | 代码                                                     | 论文                                                                |
-|----------------------------|---------------|-------------|--------------------------------------------------------|-------------------------------------------------------------------|
-| Surgical phase recognition       | Cholec80      | LoViT     | [<i class="fa-brands fa-github"/>](https://github.com/MRUIL/LoViT) | [<i class="fa-solid fa-file"/>](https://arxiv.org/abs/2305.08989v3) |
-| Surgical tool detection | Cholec80      | MoCo V2 Surg SSL - FCN head | [<i class="fa-brands fa-github"/>](https://github.com/camma-public/selfsupsurg) | [<i class="fa-solid fa-file"/>](https://arxiv.org/abs/2207.00449v3) |
 
 
 ### 小组论文
 
 | 题目   | 期刊     | 作者  | 地址 | 代码                                                     |
 |------|--------|-----|----|--------------------------------------------------------|
-| Guided activity prediction for minimally invasive surgery safety improvement in the internet of medical things | IEEE Internet of Things Journal | Hao Wang, Shuai Ding, Shanlin Yang, Chenguang Liu, Shui Yu, Xi Zheng |  [地址](https://ieeexplore.ieee.org/abstract/document/9524809)  | [<i class="fa-brands fa-github"/>](https://github.com/waynehfut/guidenet) |
 | Semantic-Preserving Surgical Video Retrieval with Phase and Behavior Coordinated Hashing | IEEE Transactions on Medical Imaging | Yuxuan Yang, Hao Wang, Jizhou Wang, Kai Dong, Shuai Ding |  [地址](https://ieeexplore.ieee.org/abstract/document/10269330/)  | [<i class="fa-brands fa-github"/>](https://github.com/trigger26/SPSVR) |
