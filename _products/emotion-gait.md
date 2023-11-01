@@ -5,7 +5,7 @@ description: 这里是数据介绍
 product_code: No.12132
 layout: product
 image: /assets/images/emotio-gait.png
-price: 可直接获取
+price: 开放获取
 author: Uttaran Bhattacharya et al.
 date: 2021-11-09
 rating: 2
@@ -29,8 +29,7 @@ Emotion-Gait数据集由2177个真实步态组成，每个步态由相同的10�
 
 ### 配置方式
 
-# Emotion-Gait
-Our new dataset consisting of human gaits annotated with 4 emotion labels: angry, happy, neutral and sad.
+The dataset consisting of human gaits annotated with 4 emotion labels: angry, happy, neutral and sad.
 
 It consists of 2,177 real gaits and 4,000 synthetic gaits.
 
@@ -45,6 +44,7 @@ time steps and V is the number of coordinate locations.
 T varies from file to file, V is fixed for all the files. 
 Specifically, each row of length V consists of the following entries in the given order:
 
+```text
 <root joint x> <root joint y> <root joint z> <spine joint x> <spine joint y> <spine joint z>
 <neck joint x> <neck joint y> <neck joint z>
 <head joint x> <head joint y> <head joint z>
@@ -59,19 +59,18 @@ Specifically, each row of length V consists of the following entries in the give
 <left foot joint x> <left foot joint y> <left foot joint z>
 <right hip joint x> <right hip joint y> <right hip joint z>
 <right knee joint x> <right knee joint y> <right knee joint z>
-<right foot joint x> <right foot joint y> <right foot joint z>.
-
-
+<right foot joint x> <right foot joint y> <right foot joint z>
+```
 
 The corresponding label for each data file in features.h5 is stored in labels.h5.
+
 The corresponding label for each data file in features_ELMD.h5 is stored in labels_ELMD.h5.
 
 The original multi-class labels for the ELMD dataset, provided by our ten annotators, is available in labels_edin_locomotion.zip. We have used these labels in our work "Take an Emotion Walk".
 
-
 All synthetic gaits are in two parts in the two files features_CVAEGCN_1_2000.h5 and features_CVAEGCN_2001_4000.h5.
-The format of storing gaits is same as the format for features.h5. Moreover, each data file in the synthetic gait is named as
-<gait ID><label>.
+
+The format of storing gaits is same as the format for features.h5. Moreover, each data file in the synthetic gait is named as `<gait ID><label>`.
 e.g., the happy gait with ID 3 is stored as 00003_Happy. Thus, the synthetic gaits are self labeled.
 
 
@@ -81,10 +80,4 @@ e.g., the happy gait with ID 3 is stored as 00003_Happy. Thus, the synthetic gai
 |----------------------------|---------------|-------------|--------------------------------------------------------|-------------------------------------------------------------------|
 | Gait emotion recognition       | Emotion-Gait      | STEP     | [<i class="fa-brands fa-github"/>](https://github.com/UttaranB127/STEP) | [<i class="fa-solid fa-file"/>](https://obj.umiacs.umd.edu/gamma-umd-website-imgs/pdfs/affectivecomputing/STEP.pdf) |
 
-
-
-### 小组论文
-
-| 题目   | 期刊     | 作者  | 地址 | 代码                                                     |
-|------|--------|-----|----|--------------------------------------------------------|
 
