@@ -4,7 +4,7 @@ subtitle: 由法国勃艮第-弗朗什孔泰大学所收集的多场景面部视
 description: 这里是数据介绍
 product_code: No.12132
 layout: product
-image: /assets/images/cholec80.png
+image: /assets/images/UBFC-rPPG.png
 price: 可申请获取
 author: S. Bobbia et al.
 date: 2019-06-01

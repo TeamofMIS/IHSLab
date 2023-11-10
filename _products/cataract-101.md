@@ -170,6 +170,21 @@ def get_dataloader(name, batch_size, shuffle, pin_memory, num_workers, **kwargs)
     return DataLoader(dataset, batch_size, shuffle=shuffle, pin_memory=pin_memory, num_workers=num_workers)
 ```
 
+### 相关论文
+
+| 题目   | 期刊 / 会议     | 作者  | 地址 | 代码                                                     |
+|------|--------|-----|----|--------------------------------------------------------|
+| GLSFormer: Gated - Long, Short Sequence Transformer for Step Recognition in Surgical Videos | MICCAI 2023 | Nisarg A. Shah et al. |  [<i class="fa-solid fa-file"/>](https://link.springer.com/chapter/10.1007/978-3-031-43996-4_37)  | [<i class="fa-brands fa-github"/>](https://github.com/nisargshah1999/GLSFormer) |
+| Dynamic CNNs Using Uncertainty To Overcome Domain Generalization for Surgical Instrument Localization | WACV 2022 | Markus Philipp et al. |  [<i class="fa-solid fa-file"/>](https://openaccess.thecvf.com/content/WACV2022/html/Philipp_Dynamic_CNNs_Using_Uncertainty_To_Overcome_Domain_Generalization_for_Surgical_WACV_2022_paper.html)  |  |
+
+
+### Benchmarks
+
+| 任务                         | 数据集变体         | 最优模型        | 代码                                                     | 论文                                                                |
+|----------------------------|---------------|-------------|--------------------------------------------------------|-------------------------------------------------------------------|
+| Surgical phase recognition       | Cataract-101      | GLSFormer     | [<i class="fa-brands fa-github"/>](https://github.com/nisargshah1999/GLSFormer) | [<i class="fa-solid fa-file"/>](https://link.springer.com/chapter/10.1007/978-3-031-43996-4_37) |
+| Domain Generalization for Surgical Instrument Localization | Cataract-101      | u-FUS |  | [<i class="fa-solid fa-file"/>](https://openaccess.thecvf.com/content/WACV2022/html/Philipp_Dynamic_CNNs_Using_Uncertainty_To_Overcome_Domain_Generalization_for_Surgical_WACV_2022_paper.html) |
+
 ### 小组论文
 
 | 题目   | 期刊     | 作者  | 地址 | 代码                                                     |

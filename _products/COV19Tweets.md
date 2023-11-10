@@ -31,6 +31,14 @@ features:
 
 由于数据集不存在原始数据，而原始数据收集后的内容和格式可能不同，不提供配置方法文件。
 
+### 相关论文
+
+| 题目   | 期刊     | 作者  | 地址 | 代码                                                     |
+|------|--------|-----|----|--------------------------------------------------------|
+| Learning Sentence-to-Hashtags Semantic Mapping for Hashtag Recommendation on Microblogs | ACM Transactions on Knowledge Discovery from Data （ACM-TKDD) | Riccardo Cantini, Fabrizio Marozzo, Giovanni Bruno, Paolo Trunfio |  [<i class="fa-solid fa-file"/>](https://dl.acm.org/doi/10.1145/3466876)  |  |
+| Sentiment analysis on COVID tweets using COVID-Twitter-BERT with auxiliary sentence approach | ACM SE '21: Proceedings of the 2021 ACM Southeast Conference | Hung Yeh Lin, Teng-Sheng Moh |  [<i class="fa-solid fa-file"/>](https://dl.acm.org/doi/10.1145/3409334.3452074)  |  |
+| Artificial intelligence-enabled social media analysis for pharmacovigilance of COVID-19 vaccinations in the United Kingdom: Observational Study | JMIR Public Health and Surveillance | Zain Hussain;  Zakariya Sheikh,  Ahsen Tahir,  Kia Dashtipour,  Mandar Gogate,  Aziz Sheikh,  Amir Hussain |  [<i class="fa-solid fa-file"/>](https://preprints.jmir.org/preprint/32543)  |  |
+
 ### 小组论文
 
 | 题目   | 期刊     | 作者  | 地址 | 代码                                                     |

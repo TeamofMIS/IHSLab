@@ -4,7 +4,7 @@ subtitle: 中国科学院计算技术研究所收集的多场景面部视频数�
 description: 这里是数据介绍
 product_code: No.12132
 layout: product
-image: /assets/images/cholec80.png
+image: /assets/images/VIPL-HR.png
 price: 可申请获取
 author: Xuesong Niu et al.
 date: 2023-01-01
