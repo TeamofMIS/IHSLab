@@ -35,5 +35,5 @@ mPower数据集通过在移动健康平台发布应用来收集参与者的数�
 
 | 题目   | 期刊     | 作者  | 地址 | 代码                                                     |
 |------|--------|-----|----|--------------------------------------------------------|
-| Wearable Sensor-based Chronic Condition Severity Assessment: An Adversarial Attention-based Deep Multisource Multitask Learning Approach | MIS Quarterly | HShuo Yu, Yidong Chai, Hsinchun Chen, Scott J. Sherman, Randall A. Brown |  [地址](https://aisel.aisnet.org/misq/vol46/iss3/7/)  |  |
+| Wearable Sensor-based Chronic Condition Severity Assessment: An Adversarial Attention-based Deep Multisource Multitask Learning Approach | MIS Quarterly | HShuo Yu, Yidong Chai, Hsinchun Chen, Scott J. Sherman, Randall A. Brown |  [<i class="fa-solid fa-file"/>](https://aisel.aisnet.org/misq/vol46/iss3/7/)  |  |
 

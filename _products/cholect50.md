@@ -43,4 +43,4 @@ CholecT50是腹腔镜胆囊切除术的内窥镜视频数据集，旨在支持�
 
 | 题目   | 期刊     | 作者  | 地址 | 代码                                                     |
 |------|--------|-----|----|--------------------------------------------------------|
-| CholecTriplet2021: A benchmark challenge for surgical action triplet recognition | Medical Image Analysis | Chinedu Innocent Nwoye et al. |  [地址](https://www.sciencedirect.com/science/article/pii/S1361841523000646)  |  |
+| CholecTriplet2021: A benchmark challenge for surgical action triplet recognition | Medical Image Analysis | Chinedu Innocent Nwoye et al. |  [<i class="fa-solid fa-file"/>](https://www.sciencedirect.com/science/article/pii/S1361841523000646)  |  |

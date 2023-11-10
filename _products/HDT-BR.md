@@ -28,4 +28,4 @@ HDT-BR数据集共包含36名健康男性志愿者的674个数据样本，年龄
 
 | 题目   | 期刊     | 作者  | 地址 | 代码                                                     |
 |------|--------|-----|----|--------------------------------------------------------|
-| Non-contact negative mood state detection using reliability-focused multi-modal fusion model | IEEE Journal of Biomedical and Health Informatics | Qian Rong; Shuai Ding; Zijie Yue; Yaping Wang; Linjie Wang; Xi Zheng; Yinghui Li |  [地址](https://ieeexplore.ieee.org/abstract/document/9795009)  |  |
+| Non-contact negative mood state detection using reliability-focused multi-modal fusion model | IEEE Journal of Biomedical and Health Informatics | Qian Rong; Shuai Ding; Zijie Yue; Yaping Wang; Linjie Wang; Xi Zheng; Yinghui Li |  [<i class="fa-solid fa-file"/>](https://ieeexplore.ieee.org/abstract/document/9795009)  |  |

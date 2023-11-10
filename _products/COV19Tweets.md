@@ -31,15 +31,8 @@ features:
 
 由于数据集不存在原始数据，而原始数据收集后的内容和格式可能不同，不提供配置方法文件。
 
-### Benchmarks
-
-| 任务                         | 数据集变体         | 最优模型        | 代码                                                     | 论文                                                                |
-|----------------------------|---------------|-------------|--------------------------------------------------------|-------------------------------------------------------------------|
-|      |            |          |      |      |
-
-
 ### 小组论文
 
 | 题目   | 期刊     | 作者  | 地址 | 代码                                                     |
 |------|--------|-----|----|--------------------------------------------------------|
-| A DTM-DiHyperGCN Joint Approach for Social Media Infodemic Early Prediction | INFORMS Workshop on Data Science 2023 | Luyue Zhao, Shuai Ding, Yidong Chai, Jiaheng Xie, Xiao Fang |  [地址](https://sites.google.com/view/data-science-2023/program/program-schedule?authuser=0)  |  |
+| A DTM-DiHyperGCN Joint Approach for Social Media Infodemic Early Prediction | INFORMS Workshop on Data Science 2023 | Luyue Zhao, Shuai Ding, Yidong Chai, Jiaheng Xie, Xiao Fang |  [<i class="fa-solid fa-file"/>](https://sites.google.com/view/data-science-2023/program/program-schedule?authuser=0)  |  |

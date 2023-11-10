@@ -5,7 +5,7 @@ description: 这里是数据介绍
 product_code: No.12132
 layout: product
 image: /assets/images/cataract-101.png
-price: 可申请获取
+price: 开放获取
 author: Schoeffmann et al.
 date: 2023-01-01
 rating: 4
@@ -170,9 +170,8 @@ def get_dataloader(name, batch_size, shuffle, pin_memory, num_workers, **kwargs)
     return DataLoader(dataset, batch_size, shuffle=shuffle, pin_memory=pin_memory, num_workers=num_workers)
 ```
 
-
 ### 小组论文
 
 | 题目   | 期刊     | 作者  | 地址 | 代码                                                     |
 |------|--------|-----|----|--------------------------------------------------------|
-| Semantic-Preserving Surgical Video Retrieval with Phase and Behavior Coordinated Hashing | IEEE Transactions on Medical Imaging | Yuxuan Yang, Hao Wang, Jizhou Wang, Kai Dong, Shuai Ding |  [地址](https://ieeexplore.ieee.org/abstract/document/10269330/)  | [<i class="fa-brands fa-github"/>](https://github.com/trigger26/SPSVR) |
+| Semantic-Preserving Surgical Video Retrieval with Phase and Behavior Coordinated Hashing | IEEE Transactions on Medical Imaging | Yuxuan Yang, Hao Wang, Jizhou Wang, Kai Dong, Shuai Ding |  [<i class="fa-solid fa-file"/>](https://ieeexplore.ieee.org/abstract/document/10269330/)  | [<i class="fa-brands fa-github"/>](https://github.com/trigger26/SPSVR) |

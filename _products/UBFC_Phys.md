@@ -179,4 +179,4 @@ class rPPG_Dataset_level(Dataset):
 
 | 题目   | 期刊     | 作者  | 地址 | 代码                                                     |
 |------|--------|-----|----|--------------------------------------------------------|
-| Facial Video-based Non-contact Stress Recognition Utilizing Multi-Task Learning with Peak Attention | IEEE Journal of Biomedical and Health Informatics | Juncong Xu, Chen song, Zijie Yue, Shuai Ding |  [地址]()Major Revision  |  |
+| Facial Video-based Non-contact Stress Recognition Utilizing Multi-Task Learning with Peak Attention | IEEE Journal of Biomedical and Health Informatics | Juncong Xu, Chen song, Zijie Yue, Shuai Ding | (Major Revision) |  |
