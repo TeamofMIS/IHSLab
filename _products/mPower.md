@@ -30,10 +30,17 @@ mPower数据集通过在移动健康平台发布应用来收集参与者的数�
 
 由于数据集数据量巨大，存在多个数据源和多种数据模态，因此需要依据具体任务而处理数据，因此不提供配置方法。
 
+### 相关论文
+
+| 题目   | 期刊 / 会议     | 作者  | 地址 | 代码                                                     |
+|------|--------|-----|----|--------------------------------------------------------|
+|Wearable Sensor-based Chronic Condition Severity Assessment: An Adversarial Attention-based Deep Multisource Multitask Learning Approach | MIS Quarterly 2022 | Shuo Yu, Yidong Chai, Hsinchun Chen, Scott J. Sherman, Randall A. Brown |  [<i class="fa-solid fa-file"/>](https://aisel.aisnet.org/misq/vol46/iss3/7/)  |  |
+| Remote smartphone monitoring of Parkinson’s disease and individual response to therapy | Nature Biotechnology 2022 | Omberg et al. |  [<i class="fa-solid fa-file"/>](https://www.nature.com/articles/s41587-021-00974-9)  |  |
+| Multi-Source Ensemble Learning for the Remote Prediction of Parkinson's Disease in the Presence of Source-Wise Missing Data | TBME 2019 | Prince et al. |  [<i class="fa-solid fa-file"/>](https://ieeexplore.ieee.org/document/8521705)  |  |
 
 ### 小组论文
 
 | 题目   | 期刊     | 作者  | 地址 | 代码                                                     |
 |------|--------|-----|----|--------------------------------------------------------|
-| Wearable Sensor-based Chronic Condition Severity Assessment: An Adversarial Attention-based Deep Multisource Multitask Learning Approach | MIS Quarterly | HShuo Yu, Yidong Chai, Hsinchun Chen, Scott J. Sherman, Randall A. Brown |  [<i class="fa-solid fa-file"/>](https://aisel.aisnet.org/misq/vol46/iss3/7/)  |  |
+| Wearable Sensor-based Chronic Condition Severity Assessment: An Adversarial Attention-based Deep Multisource Multitask Learning Approach | MIS Quarterly | Shuo Yu, Yidong Chai, Hsinchun Chen, Scott J. Sherman, Randall A. Brown |  [<i class="fa-solid fa-file"/>](https://aisel.aisnet.org/misq/vol46/iss3/7/)  |  |
 
