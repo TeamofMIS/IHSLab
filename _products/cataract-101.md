@@ -7,12 +7,12 @@ layout: product
 image: /assets/images/cataract-101.png
 price: 开放获取
 author: Schoeffmann et al.
-date: 2023-01-01
+date: 2018-06-01
 rating: 4
 features:
-    -   label: 手术，视频，阶段
+    -   label: 手术，眼科，视频，阶段
         icon: fa-file-archive
-    -   label: 自定义协议，非商业可用
+    -   label: CC BY-NC 4.0协议，非商业可用
         icon: fa-copyright
     -   label: Big-data节点
         icon: fa-desktop
@@ -21,7 +21,34 @@ features:
 
 ---
 
-Cataract-101包含由四位外科医生实施的101个白内障手术视频，视频以25 fps拍摄，分辨率为720×540，平均时长为8.34分钟。视频所有帧都由资深眼科医生标注了10个手术阶段。
+白内障手术是眼科领域最常进行的显微手术之一，这种手术的目的是用人造晶状体取代人眼晶状体。整个手术在显微镜下进行，摄像头可以记录和存档整个过程。Cataract-101包含在奥地利Klinikum Klagenfurt录制的101个白内障手术视频，手术由四位外科医生实施，视频以25 fps拍摄，分辨率为720×540，平均时长为8.34分钟。视频所有帧都由资深眼科医生标注了10个手术阶段。
+
+数据集仅用于**科研目的**，不能用于商业或其他用途。使用时还需引用以下论文:
+
+```bibtex
+@inproceedings{DBLP:conf/mmsys/SchoeffmannTSMP18,
+  author    = {Klaus Schoeffmann and
+               Mario Taschwer and
+               Stephanie Sarny and
+               Bernd M{\"{u}}nzer and
+               Manfred J{\"{u}}rgen Primus and
+               Doris Putzgruber},
+  editor    = {Pablo C{\'{e}}sar and
+               Michael Zink and
+               Niall Murray},
+  title     = {Cataract-101: video dataset of 101 cataract surgeries},
+  booktitle = {Proceedings of the 9th {ACM} Multimedia Systems Conference, MMSys
+               2018, Amsterdam, The Netherlands, June 12-15, 2018},
+  pages     = {421--425},
+  publisher = {{ACM}},
+  year      = {2018},
+  url       = {https://doi.org/10.1145/3204949.3208137},
+  doi       = {10.1145/3204949.3208137},
+  timestamp = {Wed, 21 Nov 2018 12:44:02 +0100},
+  biburl    = {https://dblp.org/rec/conf/mmsys/SchoeffmannTSMP18.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
 
 ### 访问地址
 
@@ -169,6 +196,15 @@ def get_dataloader(name, batch_size, shuffle, pin_memory, num_workers, **kwargs)
 
     return DataLoader(dataset, batch_size, shuffle=shuffle, pin_memory=pin_memory, num_workers=num_workers)
 ```
+
+### 关联数据集
+
+- [cataract-21](/products/cataract-21)
+- [IrisPupilSeg](/products/IrisPupilSeg)
+- [CatInstSeg](/products/CatInstSeg)
+- [CatRelComp](/products/CatRelComp)
+- [CatRelDet](/products/CatRelDet)
+- [LensID](/products/LensID)
 
 ### 相关论文
 

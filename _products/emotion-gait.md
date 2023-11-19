@@ -14,7 +14,7 @@ features:
         icon: fa-file-archive
     -   label: 自定义协议，非商业可用
         icon: fa-copyright
-    -   label: Big-data节点
+    -   label: 【Big-data节点】？
         icon: fa-desktop
     -   label: 陆璐维护
         icon: fa-id-card
@@ -29,22 +29,20 @@ Emotion-Gait数据集由2177个真实步态组成，每个步态由相同的10�
 
 ### 配置方式
 
-The dataset consisting of human gaits annotated with 4 emotion labels: angry, happy, neutral and sad.
+Emotion-Gait数据集由人类步态组成，并标注了4种情绪标签：愤怒、快乐、中性和悲伤。
 
-It consists of 2,177 real gaits and 4,000 synthetic gaits.
+该数据集由2,177个真实步态和4,000个合成步态组成。
 
-Of the 2,177 real gaits, 342 were collected by us and the remaining 1,835 were taken from the [Edinburgh Locomotion Mocap Database (ELMD)](https://bitbucket.org/jonathan-schwarz/edinburgh_locomotion_mocap_dataset/src/master/) and annotated by us. Please also cite the paper in the ELMD download page if using this dataset.
+在2,177个真实步态中，342个由我们收集，其余1,835个来自 [Edinburgh Locomotion Mocap Database (ELMD)](https://bitbucket.org/jonathan-schwarz/edinburgh_locomotion_mocap_dataset/src/master/) 并由我们注释。如果使用该数据集，请同时引用ELMD下载页面中的论文。
 
 
-All 342 real gaits we collected are stored in the file features.h5.
-All the 1,835 gaits taken from ELMD are stored in the file features_ELMD.h5.
+我们收集的所有342个真实步态都存储在features.h5文件中。
+从ELMD中提取的全部1,835个步态存储在features_ELMD.h5文件中。
 
-The format for each data file is T x V, where T is the number of 
-time steps and V is the number of coordinate locations.
-T varies from file to file, V is fixed for all the files. 
-Specifically, each row of length V consists of the following entries in the given order:
-
-```text
+每个数据文件的格式为T x V，其中 T 是时间步数，V是时间步数。
+每个文件的T都不同，而所有文件的V都是固定的。
+具体来说，长度为 V 的每一行都按给定顺序由以下条目组成：
+```xml
 <root joint x> <root joint y> <root joint z> <spine joint x> <spine joint y> <spine joint z>
 <neck joint x> <neck joint y> <neck joint z>
 <head joint x> <head joint y> <head joint z>
@@ -59,25 +57,22 @@ Specifically, each row of length V consists of the following entries in the give
 <left foot joint x> <left foot joint y> <left foot joint z>
 <right hip joint x> <right hip joint y> <right hip joint z>
 <right knee joint x> <right knee joint y> <right knee joint z>
-<right foot joint x> <right foot joint y> <right foot joint z>
+<right foot joint x> <right foot joint y> <right foot joint z>.
 ```
 
-The corresponding label for each data file in features.h5 is stored in labels.h5.
+features.h5中每个数据文件的相应标签存储在labels.h5中。
+features_ELMD.h5中每个数据文件的相应标签存储在labels_ELMD.h5中。
 
-The corresponding label for each data file in features_ELMD.h5 is stored in labels_ELMD.h5.
+由十位注释者提供的ELMD数据集的原始多类标签可在labels_edin_locomotion.zip中找到。我们在作品 "Take an Emotion Walk "中使用了这些标签。
+所有合成步态被划分为两个部分features_CVAEGCN_1_2000.h5和features_CVAEGCN_2001_4000.h5。
+步态的存储格式与features.h5的格式相同。合成步态中的每个数据文件命名为<步态ID> <标签> 。
 
-The original multi-class labels for the ELMD dataset, provided by our ten annotators, is available in labels_edin_locomotion.zip. We have used these labels in our work "Take an Emotion Walk".
-
-All synthetic gaits are in two parts in the two files features_CVAEGCN_1_2000.h5 and features_CVAEGCN_2001_4000.h5.
-
-The format of storing gaits is same as the format for features.h5. Moreover, each data file in the synthetic gait is named as `<gait ID><label>`.
-e.g., the happy gait with ID 3 is stored as 00003_Happy. Thus, the synthetic gaits are self labeled.
 
 
 ### Benchmarks
 
 | 任务                         | 数据集变体         | 最优模型        | 代码                                                     | 论文                                                                |
 |----------------------------|---------------|-------------|--------------------------------------------------------|-------------------------------------------------------------------|
-| Gait emotion recognition       | Emotion-Gait      | STEP     | [<i class="fa-brands fa-github"/>](https://github.com/UttaranB127/STEP) | [<i class="fa-solid fa-file"/>](https://obj.umiacs.umd.edu/gamma-umd-website-imgs/pdfs/affectivecomputing/STEP.pdf) |
-
-
+| Step: Spatial temporal graph convolutional networks for emotion perception from gaits | Emotion-Gait      | STEP     | [<i class="fa-brands fa-github"/>](https://github.com/UttaranB127/STEP) | [<i class="fa-solid fa-file"/>](https://obj.umiacs.umd.edu/gamma-umd-website-imgs/pdfs/affectivecomputing/STEP.pdf) |
+| Tntc: two-stream network with transformer-based complementarity for gait-based emotion recognition | Emotion-Gait      | Tntc     |  | [<i class="fa-solid fa-file"/>](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9746047) |
+| EPIC: Emotion Perception by Spatio-Temporal Interaction Context of Gait | Emotion-Gait      | EPIC     |  | [<i class="fa-solid fa-file"/>](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10005028) |
