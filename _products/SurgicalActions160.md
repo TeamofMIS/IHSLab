@@ -5,7 +5,7 @@ description: 这里是数据介绍
 product_code: No.12132
 layout: product
 image: /assets/images/SurgicalActions160.png
-price: 申请获取
+price: 开放获取
 author: Schoeffmann et al.
 date: 2017-11-03
 rating: 4

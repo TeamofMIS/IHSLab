@@ -5,7 +5,7 @@ description: HDT-BR数据集共包含36名健康男性志愿者的674个数据�
 product_code: No.12132
 layout: product
 image: /assets/images/hdt-br.png
-price: 未公开
+price: 自建自有
 author: 2020年航天医学基础与应用国家重点实验室研究基金资助开放课题“非接触式心理生理健康监测研究”(2020.01-2021.12, SMFA19K01)
 date: 2019-07-01
 rating: 4

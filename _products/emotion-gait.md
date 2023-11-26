@@ -14,7 +14,7 @@ features:
         icon: fa-file-archive
     -   label: 自定义协议，非商业可用
         icon: fa-copyright
-    -   label: 【Big-data节点】？
+    -   label: Big-data节点
         icon: fa-desktop
     -   label: 陆璐维护
         icon: fa-id-card
