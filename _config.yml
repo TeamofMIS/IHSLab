@@ -1,6 +1,6 @@
 # Site Settings
 lang: zh-cn
-title: 医联网测试主页
+title: 医联网主页
 tagline: 医联网测试2
 email: waynehfut@foxmail.com
 description: >
@@ -80,3 +80,4 @@ collections:
     layout: product
     image: https://via.placeholder.com/800x600
     show_sidebar: false
+    permalink: /dataset/:name

@@ -7,7 +7,7 @@ layout: product
 image: /assets/images/mpower.png
 price: 可申请获取
 author: Brian et al.
-date: 2015-03-09 —— 2015-09-09
+date: 2015-03-09
 rating: 5
 features:
     -   label: 帕金森，可穿戴设备，信号，音频，移动健康

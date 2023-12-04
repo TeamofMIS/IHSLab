@@ -1,8 +1,6 @@
 - name: 主页
   link: /
 - name: 数据集
-  link: /blog/
-- name: 论文
-  link: /products/
+  link: /dataset/
 - name: 关于
-  link: /privacy-policy/
+  link: /about/
